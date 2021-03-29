@@ -40,5 +40,5 @@ const encryptedMessage = aes256.encrypt(firstPeerSharedKey, firstPeerMessage);
 const secondPeerMessageReceived = encryptedMessage;
 console.log('message send: ',secondPeerMessageReceived);
 
-const secondDecryptedMessage = aes256.decrypt(secondPeerSharedKey, secondPeerMessageReceived);
+const secondPeerDecryptedMessage = aes256.decrypt(secondPeerSharedKey, secondPeerMessageReceived);
 console.log('message received decrypted: ', secondDecryptedMessage);
